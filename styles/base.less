@@ -66,7 +66,11 @@ atom-text-editor {
   }
 
   &.syntax--operator {
-    color: @syntax-text-color;
+    color: @red;
+
+    &.syntax--new {
+      color: @blue;
+    }
   }
 
   &.syntax--other.syntax--special-method {
@@ -86,7 +90,7 @@ atom-text-editor {
   color: @blue;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @baby-blue;
   }
 
   &.syntax--numeric {
@@ -94,7 +98,7 @@ atom-text-editor {
   }
 
   &.syntax--other.syntax--color {
-    color: @cyan;
+    color: @baby-blue;
   }
 
   &.syntax--other.syntax--symbol {
@@ -110,7 +114,11 @@ atom-text-editor {
   }
 
   &.syntax--ts, &.syntax--js {
-    color: #fff;
+    color: @light-yellow;
+
+    &.syntax--language {
+      color: @purple;
+    }
 
     &.syntax--this {
       color: @purple;
@@ -132,7 +140,7 @@ atom-text-editor {
 
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @baby-blue;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @blue;
@@ -186,9 +194,18 @@ atom-text-editor {
   &.syntax--css {
     color: @green;
   }
+  &.syntax--type {
+
+    &.syntax--primitive {
+
+      &.syntax--ts {
+        color: @blue;
+      }
+    }
+  }
 
   &.syntax--function  {
-    color: @cyan;
+    color: @baby-blue;
 
     &.syntax--any-method {
       color: @blue;
@@ -198,10 +215,10 @@ atom-text-editor {
 
 .syntax--entity {
   &.syntax--name {
-
+    color: @light-yellow;
   }
   &.syntax--name.syntax--function {
-    color: @blue;
+    color: @yellow;
   }
   &.syntax--name.syntax--type {
     color: @light-orange;
@@ -232,7 +249,7 @@ atom-text-editor {
 }
 
 .syntax--meta {
-  color: #fff;
+  color: @light-yellow;
 
   &.syntax--class {
     color: @light-orange;
