@@ -48,6 +48,7 @@ atom-text-editor {
 
   .selection .region {
     background-color: @syntax-selection-color;
+    color: #fff;
   }
 }
 
@@ -210,6 +211,7 @@ atom-text-editor {
         color: @blue;
       }
     }
+
   }
 
   &.syntax--function  {
@@ -342,6 +344,11 @@ atom-text-editor {
   color: @light-yellow;
 }
 
+.syntax-source.syntax--ts {
+  .syntax--support.syntax--type.syntax--storage {
+    color: @purple;
+  }
+}
 
 // Mini editor
 
